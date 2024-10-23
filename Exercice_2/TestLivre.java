@@ -2,13 +2,17 @@ package Exercice_2;
 
 public class TestLivre {
     public static void main(String[] args) {
-        // Create the first book with title, author, and number of pages
-        Livre livreOne = new Livre("Horstman", "Au Cœur de Java : Notions Fondamentales", 820);
+        // Create the first book
+        Livre livreOne = new Livre( );
+        livreOne.setAuteur("Horstman");
+        livreOne.setTitre("Au Cœur de Java : Notions Fondamentales");
+        livreOne.setNombreDePage(820);
 
-        // Create the second book with title and author (default pages)
-        Livre livreTwo = new Livre("Richard Monson-Haefel", "Entreprise Java Bean",568);
+        // Create the second book
+        Livre livreTwo = new Livre("Richard Monson-Haefel", "Entreprise Java Bean");
+        livreTwo.setNombreDePage(568);
 
-        // Create the third book with title, author, and number of pages
+        // Create the third book
         Livre livreThree = new Livre("Horstman", "Au Cœur de Java : Fonctions Avancées", 950);
 
         // Print the first book's details using toString()

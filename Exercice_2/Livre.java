@@ -9,8 +9,8 @@ public class Livre {
 
     // DEFAULT CONSTRUCTOR
     public  Livre() {
-        this.auteur = "Inconnu";
-        this.titre = "Sans titre";
+        this.auteur = "";
+        this.titre = "";
         this.nombreDePage = 1;
     }
 
