@@ -19,6 +19,9 @@ public class TestLivre {
         System.out.println(livreOne); // Implicit call to toString()
         System.out.println(livreOne.toString()); // Explicit call to toString()
 
+        // Print the number of the books
+        System.out.println("The number of created books : "+Livre.getNombreDeLivre());
+
         // Compare the number of pages for the first two books
         String comparisonResult = livreOne.plusVolumineuxQue(livreTwo)
                 ? "The book \"" + livreOne.getTitre() + "\" has more pages than the book \"" + livreTwo.getTitre() + "\"."

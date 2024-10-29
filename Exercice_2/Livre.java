@@ -6,12 +6,11 @@ public class Livre {
     private String titre;
     private String auteur;
     private int nombreDePage;
+    private static int nombreDeLivre;
 
     // DEFAULT CONSTRUCTOR
     public  Livre() {
-        this.auteur = "";
-        this.titre = "";
-        this.nombreDePage = 1;
+        nombreDeLivre++;
     }
 
     // CONSTRUCTOR WITH AUTHOR AND TITLE
@@ -19,6 +18,8 @@ public class Livre {
         this.auteur = auteur;
         this.titre = titre;
         this.nombreDePage = 1;
+        nombreDeLivre++;
+
     }
 
     // CONSTRUCTOR WITH AUTHOR, TITLE AND NUMBER OF PAGES
@@ -26,6 +27,13 @@ public class Livre {
        this.auteur = auteur;
        this.titre = titre;
        this.nombreDePage = nombreDePage;
+        nombreDeLivre++;
+    }
+
+
+    // GET BOOKS NUMBER
+     public static int getNombreDeLivre() {
+        return nombreDeLivre;
     }
 
     // GET AUTHOR
@@ -85,11 +93,4 @@ public class Livre {
         return lv1.auteur.equals(lv2.auteur);
    }
 
-
-
-
-    public static void main(String[] args) {
-
-
-    }
 }
